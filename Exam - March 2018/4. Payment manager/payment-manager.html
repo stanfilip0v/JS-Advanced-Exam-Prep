@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Manager</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="payment-manager.js"></script>
+    <link rel="stylesheet" href="payment-manager.css">
+</head>
+<body>
+
+<div id="amazon"></div>
+
+<div id="ebay"></div>
+
+<div id="walmart"></div>
+<script>$(function() {
+    let paymentMangersData = [
+        ['amazon', 'Amazon'],
+        ['ebay', 'eBay'],
+        ['walmart', 'Walmart'],
+        // Others
+    ];
+
+    for (let [target, title] of paymentMangersData) {
+        let paymentManager = new PaymentManager(title);
+        paymentManager.render(target);
+    }
+});
+</script>
+
+</body>
+</html>
