@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts Builder</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="contacts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="main"></div>
+<script>
+    // let contacts = [
+    //     new Contact("Ivan", "Ivanov", "0888 123 456", "i.ivanov@gmail.com"),
+    //     new Contact("Maria", "Petrova", "0899 987 654", "mar4eto@abv.bg"),
+    //     new Contact("Jordan", "Kirov", "0988 456 789", "jordk@gmail.com")
+    // ];
+    // contacts.forEach(c => c.render('main'));
+
+    // setTimeout(() => contacts[1].online = true, 1000);
+    // setTimeout(() => contacts[0].online = true, 2000);
+    // setTimeout(() => contacts[2].online = true, 3000);
+    // setTimeout(() => contacts[1].online = false, 4000);
+    // setTimeout(() => contacts[0].online = false, 5000);
+    // setTimeout(() => contacts[2].online = false, 6000);
+
+    let contact = new Contact('Ivan', 'Ivanov', '037483', 'asdasd');
+    contact.online = true;
+    contact.render('main');
+</script>
+</body>
+</html>
+
+<!--firstName: 'Ivan',-->
+<!--lastName: 'Ivanov',-->
+<!--phone: '0888 123 456',-->
+<!--email: 'i.ivanov@gmail.com'-->
